@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-text-primary antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 0.4s ease-in-out;
+  }
+  .transition-smooth-slow {
+    transition: all 0.6s ease-in-out;
+  }
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  }
+  .shadow-glow-lg {
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+  }
+}
