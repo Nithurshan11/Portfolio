@@ -1,7 +1,6 @@
 export const achievements = [
   {
     title: 'G.C.E O/L',
-    result: '9A passes',
     year: '2020',
     icon: 'trophy',
   },
